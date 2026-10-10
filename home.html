@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset = "UTF-8">
+  <link rel = "stylesheet" href =
+    "home.css">
+  <script src = "https://kit.fontawesome.com/fea90dfb29.js" 
+    crossorigin = "anonymous" ></script>
+  <meta name = "viewport" content =
+ "width=device-width, initial-scale=
+    1.0">
+  <title>MY HOME PAGE</title>
+</head> 
+<body>
+ <header id= "box">
+   <h1>De Great Hub</h1>
+   <h3>Welcome </h3>
+   <p id = "date"></p>
+   
+    <i class = "fas fa-bars fa-2x" style=
+      "color:hwb(0 7% 92%);" 
+      onclick= "changeWidth()" id = "menu">
+      </i>
+      
+     
+   <div class= "menu-content" id ="content" >
+     <a href="/home.html">HOME</a><hr>
+     <a href="#oder">ORDER</a><hr>
+     <a href="#transaction">TRANSACTION</a><hr>
+     <a href="#profile">PROFILE</a><hr>  
+     <a href="/login.html">LOGOUT</a>
+    </div> 
+ </header>
+   
+
+   
+
+<div class = "balhold">
+  Total Balance <br>
+  <p class = "bal" id = "bal">
+    GHS 0.00</p>
+</div>
+
+<h2>TOP UP WITH MOMO</h2>
+<div class = "momohold">
+  <label>
+    TRANSACTION ID:<br>
+    <input type = "number">
+  </label><br>
+  <button type = "submit">CLAIM</button>
+</div>
+  
+<h2>PACKAGES</h2>
+  <img class = "Net1" src="image/mtn-logo.png"
+    onclick = "openYellow()"
+      alt="MTN Logo"> 
+<hr>
+  
+  <img class = "Net2" src="image/at-logo.png"
+      onclick = "openAT()"
+     alt="AIRTELTIGO Logo">
+<hr>
+    
+  <img class = "Net3" src="image/telecel-logo.png"
+      onclick = "openTelecel()"
+    alt="TELECEL Logo">  
+  
+
+
+<hr>
+<script src="home.js"></script>
+  
+<footer>
+  All Rights Reserved © 2026
+</footer><hr>
+  
+</body>
+</html>

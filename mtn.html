@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset = "utf-8">
+  <meta name = "viewport" content =
+    "width = device-width, initial-scale = 
+    1.0">
+  <link rel = "stylesheet"
+    href = "mtn.css" >
+ <script src = 
+   "https://kit.fontawesome.com/fea90dfb29.js" 
+   crossorigin ="anonymous"></script>
+</head>
+<body>
+ <header id= "box">
+   <h1>De Great Hub</h1>
+   <h3>Welcome </h3>
+   <p id = "date"></p>
+   
+    <i class = "fas fa-bars fa-2x" style=
+      "color:hwb(0 7% 92%);" 
+      onclick= "changeWidth()" id = "menu">
+      </i>
+      
+     
+   <div class= "menu-content" id ="content" >
+     <a href="/home.html">HOME</a><hr>
+     <a onclick = "showOrders()" 
+       id = "drop">
+       ORDER
+     </a><hr>
+       <div id = "ordernetwork"> 
+         <a href= "#mtn_orders">MTN</a><hr>
+         <a href= "#at_orders">AT</a><hr>
+         <a href= "#telecel_orders">TELECEL</a><hr>
+         <a href= "#mtn-afa_orders">AFA</a>
+        
+       </div>
+          
+     <a href="#transaction">TRANSACTION</a><hr>
+     <a href="#profile">PROFILE</a><hr>  
+     <a href="/login.html">LOGOUT</a>
+    </div> 
+ </header>
+   
+  
+
+<h1>MTN PORTAL</h1><hr>
+<div class = "balhold">
+  Total Balance <br>
+  <p class = "bal" id = "bal">
+    GHS 0.00</p>
+</div>
+  
+ <div class = "backhold">
+      <a href = "javascript:history.back()"
+        class = "back-arrow">
+       <i class="fas fa-arrow-left fa-xl" style="color: rgb(11, 11, 9);">
+        </i>
+      </a>
+ </div>
+  
+<h2>SENT DATA Bundle</h2>
+  
+<h3>Data Bundle</h3>
+<div class = "holder">
+ <form id = "M_dataForm">
+  <label>
+    Package Size:
+    <select name = "package" 
+        id = "M_dataPack">
+        <option value = "5">1GB ➖ GHS 5.00</option>
+        <option value = "10">2GB ➖ GHS 10.00</option>
+        <option value = "15">3GB ➖ GHS 15.00</option>
+        <option value = "20">4GB ➖ GHS 20.00</option>
+        <option value = "25">5GB ➖ GHS 25.00</option>
+        <option value = "30">6GB ➖ GHS 30.00</option>
+        <option value = "35">8GB ➖ GHS 35.00</option>
+        <option value = "45">10GB ➖ GHS 45.00</option>
+        <option value = "50">15GB ➖ GHS 50.00</option>
+      </select>
+  </label>
+  
+  <label>
+        Phone Number:
+        <input type = "tel" id = "M_dataNum"
+        placeholder="0244000000" maxlength= "12"><br>
+        <button type = "button" id = "M_dataBtn">
+          SEND</button>
+  </label>
+
+    </form>
+ </div>
+<hr>
+
+<div class = "confirm-holder" 
+  id = "confirmPopup">
+  
+  <div class = "confirm-box">
+    <p class = "text">
+    Sending <b id = "textGig">44</b>
+    MTN <i id = "textPack">
+      data bundle to</i><br>
+     <b id = "textNumb">0244000000</b>
+    </p>
+    
+    <div class = "alert-button">
+      <button type ="button" id="confirmBtn">
+      confirm</button>
+      <button type ="button" id="cancelBtn">
+      cancel</button>
+    </div>
+    
+  </div>
+</div>
+      
+  
+<h2>BUY VOICE PACKAGE</h2>
+    
+<h3>Voice Bundle</h3>
+<div class = "holder">
+   <form id = "M_voiceForm">
+     <label>
+       Package Size:<br>
+       <select name = "package1"
+       id = "M_voicePack">
+         <option value = "4">83min ➖ GHS 4.00</option>
+         <option value = "5">98min ➖ GHS 5.00</option>
+         <option value = "6">115min ➖ GHS 6.00</option>
+         <option value = "7">131min ➖ GHS 7.00</option>
+         <option value = "8">147min ➖ GHS 8.00</option>
+         <option value = "9">173min ➖ GHS 9.00</option>
+      </select>
+     </label>
+     
+     <label>
+       Phone Number:
+       <input type = "tel" id = "M_voiceNum"
+       placeholder = "0244000000" maxlength= "12">
+       <button type = "button" id = "M_voiceBtn">SEND</button>
+     </label>
+     
+ </form>
+ </div>
+<hr>
+  
+<h2>BUY AIRTIME</h2>
+<h3>Airtime</h3>
+<div class = "holder">
+ <form name = "package2"
+   id = "M_airForm">
+   <label>
+     Enter Amount:
+     <input type = 'number' id = "M_airAmount" >
+   </label>
+   
+   <label>
+     Enter Number:
+     <input type = "tel" id = "M_airNum" 
+     placeholder = "0244000000" maxlength= "12">
+     <button type = "button" id = "M_airBtn">PLACE</button>
+   </label>
+   
+ </form>
+</div>
+<hr>
+
+
+
+<script  src = "mtn.js"></script>
+</body>
+</html>
